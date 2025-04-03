@@ -2,30 +2,22 @@ import Button from "../Button";
 
 const Welcome = () => {
     return (
-        <div>
-            <div>
-                <h1 
-                    style={{
-                        fontSize: "71px",
-                        fontWeight: "bold",
-                       
-                    }}
-                >
-                    Melhor Agência de Marketing Do Bairro
+        <div className="flex justify-between items-center gap-40 px-20 bg-[url('/Images/Fundo.svg')] bg-cover bg-center bg-no-repeat h-screen">
+            {/* Texto ocupa 50% */}
+            <div className="w-1/2 flex flex-col gap-4">
+                <h1 className="text-[50px] font-bold text-white">
+                    Melhor Agência de<br/>Marketing Do Bairro
                 </h1>
-                <p 
-                    style={{
-                        fontSize: "30px",
-                        fontWeight: "300",
-                        opacity: "1"
-                    }}
-                >
-                    Somos uma agência de performance digital, aceleramos vendas e aquisição de leads para grandes marcas.
+                <p className="text-[20px] font-light opacity-100 text-white">
+                    Somos uma agência de performance digital, aceleramos<br/>vendas e aquisição de leads para grandes marcas.
                 </p>
+                
+                <Button title="Aumentar Vendas" kind="secundary"/>
+            </div>
 
-                <div className="action">
-                    <Button title="Aumentar Vendas" kind="secundary"/> {/* Importamos o botão,ou seja criamos uma pasta e import, já o kint vem do botão para modificar a cor ou estolizar o segundo botão */}
-                </div>
+            {/* Imagem ocupa 50% */}
+            <div className="w-1/2 flex justify-center">
+                <img className="w-full max-w-[900px] object-cover" src="/Images/BannerWelcome.svg" alt="bannerWelcome" />
             </div>
         </div>
     );
