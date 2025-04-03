@@ -1,6 +1,8 @@
 import NavBar from "@/Components/Leyouts/NavBar";
 import Welcome from "@/Components/Welcome/Index";
 import Factures from "@/Components/Factures";
+import Contacto from "@/Components/From/Index";
+
 export default function Home() {
   return (
     <main className="w-full min-h-screen pt-16"> {/* Ajuste a altura conforme necessário */}
@@ -11,6 +13,10 @@ export default function Home() {
 
         <section>
             <Factures />
+        </section>
+
+        <section>
+            <Contacto />
         </section>
     </main>
   );
