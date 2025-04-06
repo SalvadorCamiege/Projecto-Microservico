@@ -12,7 +12,7 @@ const Welcome = () => {
                     Somos uma agência de performance digital, aceleramos<br/>vendas e aquisição de leads para grandes marcas.
                 </p>
                 
-                <Button title="Aumentar Vendas" kind="secundary"/>
+                <Button title="Aumentar Vendas" kind="secundary" className="w-[200px]" />
             </div>
 
             {/* Imagem ocupa 50% */}

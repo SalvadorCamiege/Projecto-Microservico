@@ -1,4 +1,6 @@
 import Button from "../Button";
+import Link from 'next/link';
+
 
 const Contacto = () => {
   const handleSubmit = (e) => {
@@ -70,6 +72,13 @@ const Contacto = () => {
         </select>
 
         <Button title="Enviar" kind="Primary" className="w-full" />
+        <p>
+            Ao enviar esse formulário, você reconhece que leu as nossas{" "}
+            <Link href="/politica-de-privacidade" className="text-green-600 underline">
+            Políticas de Privacidade
+            </Link>
+        </p>
+
       </form>
     </div>
   );

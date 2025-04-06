@@ -2,6 +2,7 @@ import NavBar from "@/Components/Leyouts/NavBar";
 import Welcome from "@/Components/Welcome/Index";
 import Factures from "@/Components/Factures";
 import Contacto from "@/Components/From/Index";
+import Footer from "@/Components/Leyouts/Footer";
 
 export default function Home() {
   return (
@@ -17,6 +18,10 @@ export default function Home() {
 
         <section>
             <Contacto />
+        </section>
+
+        <section>
+            <Footer />
         </section>
     </main>
   );
